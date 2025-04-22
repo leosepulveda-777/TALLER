@@ -1,0 +1,24 @@
+class InformacionPersonal {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+String nombre = "Fabian";
+int edad = 22;
+double estatura = 1.81;
+char inicial = 'F';
+boolean esEstudiante = false;
+//definimos variables,pues lo que vamos a usar para la info personal
+
+System.out.println(" Mi nombre es " + nombre  + " tengo " + edad + " años," +      "mido"+ estatura + " mi inicial es " + inicial + " Es estudiante? " + esEstudiante );
+// imprimimos la info personal, segun las variables que definimos  anteriormente 
+
+double[] calificaciones = {2.5,3.8,5.0,1.9,4.0}; 
+//definimos las calificaciones como enteros, ya que usamos numeros naturales sin puntos decimales 
+
+        for (int i = 0; i < calificaciones.length;i++) 
+        //utilizamos el bucle para recorrer cada posicion de las notas escritas anteriormente
+        {
+            System.out.println("Calificación en la posición " + i + ": " + calificaciones[i]);
+            //imprimimos las calificaciones , y su poscion
+        }
+    }
+}
