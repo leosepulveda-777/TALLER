@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class NumerosPares{
+    public static void main (String[] args) {
+        System.out.println("Try programiz.pro");
+         Scanner teclado = new Scanner(System.in);
+         //creamos el objeto para leer datos del usuario 
+         System.out.print(" Escribe un numero hasta donde quieres contar ");
+         //pedimos el numero que el usuario le requiera solicitar la accion
+         int numeroFinal= teclado.nextInt();
+         //guardamos el numero aqui
+        int contador = 1;
+        //empezamos a contar desde el numero 1 
+        
+        while (contador<=numeroFinal) {
+        //para que no pase del numero del usuario 
+        if (contador % 2 == 0) {
+        //aqui revisamos si es par , o impar con la funcion modulo, ya que la division del numero su producto nos da 0 y eso determina si es par o impar 
+        
+    System.out.println(contador +  "  Es par.");  }
+    //verificmos si es par  
+     else {
+System.out.println(contador +  " Es impar.") ; 
+//verificamos si es impar
+     }   
+       
+        contador =  contador + 1; 
+        //sumamos uno al contador para que vaya aumentando
+  }
+    }
+}
