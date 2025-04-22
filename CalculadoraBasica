@@ -1,0 +1,52 @@
+import java.util.Scanner;
+class CalculadoraBasica {
+
+
+    public static int sumar(int a, int b) {
+        return (a+b);
+    }
+    public static int restar(int a, int b)  {
+        return(a-b);
+    }
+    public static int multiplicar(int a, int b)  {
+        return(a*b);
+    }
+    public static double dividir(int a, int b) {
+        if (b == 0) {
+            System.out.println(" FALLA EN EL SISTEMA: DIVISION POR EL VALOR O.");
+            return 0;
+        }
+        return (double) a/b;
+        //especificamos el sistema en caso de la division sea por 0 el valor cero , en la segunda posicion (denominador)
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        //imprimos para que el usuario pueda escribir
+
+        System.out.println( " cual es el primer digito?: " ) ;
+        int digito1 = scanner.nextInt();
+
+        System.out.print("cual es el segundo  digito?: ");
+        int digito2 = scanner.nextInt();
+        //solicitamos los digitos 
+
+        System.out.println ("Suma: " + sumar(digito1, digito2));
+        System.out.println("Resta: " + restar(digito1, digito2));
+        System.out.println("Multiplicación: " + multiplicar(digito1, digito2));
+        System.out.println("División: " + dividir(digito1, digito2));
+        //operaciones que se ejecutaran
+
+
+        if (digito1 > digito2) { // Corregí 'num1' a 'digito1'
+            System.out.println("El primer valor  es mayor que el segundo.");
+        } else if (digito1 < digito2) {
+            System.out.println("El segundo valor es mayor que el primero.");
+        } else {
+            System.out.println("Ambos valores son iguales.");
+            //escribir la comparacion de los numeros 
+        }
+        scanner.close();
+    }
+}
