@@ -1,0 +1,25 @@
+class RegistroUsuarios {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        
+    String[] names = {"Leo", "Nataly", "Matias", "Cristian", "Geronimo"};
+    //tipo de datos para almacenar los nombres , en este caso tipo texto
+    
+    int[] años = {15,18,22,17,18};
+    //tipo de datos para almacenar las edades , este caso en enteros 
+    
+   
+    for (int i =  0; i < names.length; i++)
+    //iterador que va a recorrer los 5 usuarios  y verifica lo solicitado
+    
+    if (años[i]>=18) {
+    System.out.println( " Usuario "  +  names[i] +  " Es mayor de edad."); 
+    //verfica si el usuario es mayor de edad.
+    } else {
+    System.out.println( " Usuario "  +   names[i] +  " Es menor de edad. ");
+    //verifica si el usuario es menor de edad.
+    } 
+    
+    
+    }
+}
